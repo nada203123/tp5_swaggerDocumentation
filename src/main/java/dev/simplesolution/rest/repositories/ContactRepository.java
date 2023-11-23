@@ -1,0 +1,14 @@
+package dev.simplesolution.rest.repositories;
+
+import dev.simplesolution.rest.entities.Contact;
+import java.util.List;
+
+import java.awt.*;
+
+public interface ContactRepository {
+    List<Contact> getAll();
+    Contact getById(Long id);
+    Contact save(Contact newContact);
+    Contact update(Contact newContact);
+    void delete(Long id);
+}
